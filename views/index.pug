@@ -1,5 +1,41 @@
 extends layout
 
 block content
-  
-  h1 Welcome to the way to transform your Body. 
+   head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/main.css')
+
+    h1 Welcome to your physical Transfomation. 
+
+    extends layout
+
+block content
+  //Check for any articles being passed in from the server
+  if (articles && articles.length)
+    table
+        thead
+            th Name
+            th Description
+            th Workout
+            th Update
+            th Mood
+            th Nutrition
+            th WorkoutIntensity
+            th Delete
+        tbody
+            //If there is articles, create a row and column for each article
+            each article in articles
+                tr
+                    td= article.name
+                    td= article.description
+                    td= article.workout
+                    td= article.mood
+                    td= article.nutrition
+                    td= article.workoutintensity
+                    td 
+                        a(href='/update/'+article.id) Update
+                    td
+                        form(method='POST' action='/delete/'+article.id)
+                            button(type='submit') Delete
+  else
+    h1 No articles!

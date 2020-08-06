@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  h1 Insert Article below
+  //Insert form where user will input all the files
+  form(method='POST' action='/insert')
+    div
+        h2 Insert name
+        input(type='text' name='name')
+    div
+        h2 Description
+        input(type='text' name='description')
+    div
+        h2 Workout
+        input(type='text' name='workout')
+
+    div
+        h2 Workout Intensity
+        input(type='text' name='workoutintensity')
+
+    div
+        h2 Mood
+        input(type='text' name='mood')
+
+    div
+        h2 Nutrition
+        input(type='text' name='nutrition')
+    div
+        button(type='submit' value='Submit') Submit

@@ -30,6 +30,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="models\articles.js">
+      <SubType>Code</SubType>
+      <TestFramework>Jasmine</TestFramework>
+    </Content>
     <Content Include="models\user.js">
       <SubType>Code</SubType>
     </Content>
@@ -38,10 +42,10 @@
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
-    <Content Include="views\Cardio.pug">
+    <Content Include="views\index.pug" />
+    <Content Include="views\insert.pug">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="views\index.pug" />
     <Content Include="views\layout.pug" />
     <Content Include="views\error.pug" />
   </ItemGroup>
@@ -58,13 +62,7 @@
     <Content Include="views\login.pug">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="views\Nutrition.pug">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="views\Page1.pug">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="views\ResistanceTraining.pug">
+    <Content Include="views\update.pug">
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\user.pug">
