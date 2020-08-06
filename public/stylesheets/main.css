@@ -1,0 +1,22 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: rgb(226,226,226);
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    min-height: 8vh;
+    background-color: #5d4954;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    color: rgb(226, 226, 226);
+    letter-spacing: 5px;
+}
